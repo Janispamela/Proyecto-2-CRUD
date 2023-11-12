@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fecha.innerHTML = FECHA.toLocaleDateString('es-MX', { weekday: 'long', month: 'short', day: 'numeric' });
 
     // Restaurar datos desde localStorage
-    let datos = localStorage.getItem('TODOS');
+    let datos = localStorage.getItem('TODO');
     if (datos) {
         LISTA = JSON.parse(datos);
         id = LISTA.length;
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 realizado: false,
                 eliminado: false
             });
-            localStorage.setItem('TODOS', JSON.stringify(LISTA));
+            localStorage.setItem('TODO', JSON.stringify(LISTA));
             id++;
             input.value = '';
         }
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     realizado: false,
                     eliminado: false
                 });
-                localStorage.setItem('TODOS', JSON.stringify(LISTA));
+                localStorage.setItem('TODO', JSON.stringify(LISTA));
                 id++;
                 input.value = '';
             }
@@ -108,6 +108,6 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (datoElemento === 'eliminado') {
             tareaEliminada(elemento);
         }
-        localStorage.setItem('TODOS', JSON.stringify(LISTA));
+        localStorage.setItem('TODO', JSON.stringify(LISTA));
     });
 });
