@@ -7,42 +7,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Lista de tareas</title>
 </head>
 <body>
+    <header>
+        <h1>Lista de tareas</h1>
+    </header>
     
-<div class="container">
-<div class="perfil">
-    <div id="fecha">Sabado 28 de Octubre</div>
-    <h1>Hola</h1>  
-    <span>Cumple tus metas</span> 
-</div>
+    <div class="container">
+        <section class="perfil">
+            <div id="fecha">Sábado 28 de Octubre</div>
+            <h2>Hola</h2>  
+            <span>Cumple tus metas</span> 
+        </section>
 
-<div class="agregar-tarea">
-<input type="text" id="input" placeholder="agregar una tarea">
-<i id="enter" class="fas fa-plus-circle"></i>
-</div>
+        <section class="agregar-tarea">
+            <input type="text" id="input" placeholder="Agregar una tarea">
+            <i id="boton-enter" class="fas fa-plus-circle"></i>
+        </section>
 
-<div class="seccion-tarea">
-    <h3>Tareas pendientes</h3>
-    <ul id="lista">
+        <section class="seccion-tarea">
+            <h3>Tareas pendientes</h3>
+            <ul id="lista">
+                <!-- Commented out sample tasks
+                <li>
+                    <i class="far fa-circle co" data="realizado" id="0"></i>
+                    <p class="text line-through">Hacer proyecto de Ucamp</p>
+                    <i class="fas fa-trash de" data="eliminado" id="0"></i>
+                </li>
+                <li>
+                    <i class="far fa-circle co" data="realizado" id="1"></i>
+                    <p class="text line-through">Estudiar Javascript</p>
+                    <i class="fas fa-trash de" data="eliminado" id="1"></i>
+                </li>
+                -->
+            </ul>
+        </section>
+    </div>
 
-<!--     <li>
-        <i class="far fa-circle co" data="realizado" id="0"></i>
-        <p class="text line-through">Hacer proyecto de Ucamp</p>
-        <i class="fas fa-trash de" data="eliminado" id="0"></i>
-    </li> -->
-<!--     <li>
-        <i class="far fa-circle co" data="realizado" id="0"></i>
-        <p class="text line-through">Estudiar Javascript</p>
-        <i class="fas fa-trash de" data="eliminado" id="0"></i>
-    </li> -->
-</ul>
-</div>
-</div>
-
-<script src="script.js"></script>
+    <script src="./JS/script.js"></script>
 </body>
 </html>
-1.02.56

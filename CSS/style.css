@@ -1,3 +1,16 @@
+/* Responsivo */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -26,6 +39,7 @@ body {
     padding: 0 30px;
 }
 
+/*Perfil*/
 .perfil h1 {
     color: var(--white);
 }
@@ -40,6 +54,7 @@ body {
     padding: 50px 15px 5px 0px;
 }
 
+/*Agregar tarea*/
 .agregar-tarea {
     background-color: var(--white);
     width: 100%;
@@ -76,6 +91,7 @@ body {
     color: var(--pink);
 }
 
+/*Seccion de tarea */
 .seccion-tarea h3 {
     margin-bottom: 20px;
     color: var(--white);
