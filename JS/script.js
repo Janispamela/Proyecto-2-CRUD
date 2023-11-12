@@ -6,14 +6,14 @@ const botonEnter = document.querySelector('#boton-enter')
 const check = 'fa-check-circle'
 const uncheck = 'fa-circle'
 const lineThrough = 'line-through'
+let id
 let LIST
 
-let id
 
-//Actualizar fecha 
+//creacion de fecha actualizada 
 
 const FECHA = new Date ()
-fechanv.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday: 'long', month: 'short', day:'numeric'})
+fecha.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday: 'long', month: 'short', day:'numeric'})
 
 
 
@@ -21,7 +21,7 @@ fechanv.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday: 'long', month: 's
 
 
 
-// Funcion agregar tarea 
+// funcion de agregar tarea 
 
 function agregarTarea( tarea,id,realizado,eliminado) {
     if(eliminado) {return} // si existe eliminado es true si no es false 
@@ -42,7 +42,7 @@ function agregarTarea( tarea,id,realizado,eliminado) {
 }
 
 
-// Funcion de Tarea Realizada 
+// funcion de Tarea Realizada 
 
 function tareaRealizada(element) {
     element.classList.toggle(check)
@@ -66,7 +66,7 @@ function tareaEliminada(element){
 
 
 
-// Crear evento para escuchar enter y habilitar su boton 
+// crear un evento para escuchar el enter y para habilitar el boton 
 
 botonEnter.addEventListener('click', ()=> {
     const tarea = input.value
@@ -123,7 +123,7 @@ lista.addEventListener('click',function(event){
 })
 
 
-
+// Local storage
 
 let data = localStorage.getItem('TODO')
 if(data){

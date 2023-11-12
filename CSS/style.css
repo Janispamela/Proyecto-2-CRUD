@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    max-width: 80%;
+    max-width: 100%;
     width: 350px;
     height: 550px;
     margin: 0 auto;
@@ -146,6 +146,11 @@ footer p {
     .agregar-tarea {
         flex-direction: column;
         gap: 10px;
+        height: auto;
+    }
+
+    .agregar-tarea input {
+        height: 40px; /* Adjust height for better mobile experience */
     }
 
     .seccion-tarea li {
